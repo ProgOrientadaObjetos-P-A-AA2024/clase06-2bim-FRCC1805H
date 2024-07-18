@@ -48,6 +48,7 @@ public class EnlaceDos {
         try{  
             establecerConexion();
             Statement statement = obtenerConexion().createStatement();
+            //   Ciudad es nombre de la tabla que esta creada en la base de atos 
             String data = String.format("INSERT INTO Ciudad (nombre, poblacion) "
                     + "values ('%s', %d)", ciudad.obtenerNombre(), 
                     ciudad.obtenerPoblacion());
